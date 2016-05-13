@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+				http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Registering beans in Application(ROOT) Context -->
+	<context:component-scan base-package="com.lawulu.bdc">
+			<context:exclude-filter type="annotation"
+								expression="org.springframework.stereotype.Repository" />
+	</context:component-scan>
+
+	<util:properties id="config"
+		location="classpath:/config/config-#{systemProperties['envTarget']}.properties" />
+
+	<import resource="classpath:config/spring/context-datasource.xml" />
+	<import resource="classpath:config/spring/context-transaction.xml" />
+
+
+	
+	
+</beans>
