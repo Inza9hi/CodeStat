@@ -1,0 +1,1 @@
+<h2>Hello Spring MVC</h2>

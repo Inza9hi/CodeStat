@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="${base}/" >
+        <title>慈记数据中心运维平台</title>
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/dashboard.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">lawulu Big Data Center Admin Console</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li <#if activedTab?? && 0=activedTab>class="active"</#if>><a href="message">消息</a></li>
+                        <li <#if activedTab?? && 2=activedTab>class="active"</#if>><a href="help">帮助</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar">
+                    <div>
+                        <ul class="nav nav-list">
+                            <li><label class="tree-toggle nav-header">分院查询</label>
+                                <ul id="subcom-dimension" class="nav nav-list tree"></ul>
+                                <li><a href="subcom_query" data-placement="right" title="">分院查询</a></li>
+                                </ul>
+                            </li>
+
+                            <li><label class="tree-toggle nav-header">测试</label>
+                                 <ul id="test-dimension" class="nav nav-list tree">
+                                 <li><a href="test?serverIp=10.1.5.4" data-placement="right" title="Lawulu-Pc">菜单1</a></li>
+                                 <li><a href="test?serverIp=10.10.10.143" data-placement="right" title="busdataapi01">菜单2</a></li></ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                    ${body}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
