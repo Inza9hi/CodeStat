@@ -1,4 +1,4 @@
-package com.ciji.lawulu.etl.batch.test;
+package com.lawulu.bdc.etl.batch.test;
 
 import com.lawulu.bdc.etl.batch.config.DatabaseConfiguration;
 import com.lawulu.bdc.etl.batch.config.DubboConfiguration;

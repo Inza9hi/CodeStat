@@ -1,4 +1,4 @@
-package com.ciji.lawulu.etl.batch.test;
+package com.lawulu.bdc.etl.batch.test;
 
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

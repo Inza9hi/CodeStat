@@ -1,6 +1,6 @@
-package com.ciji.lawulu.etl.batch.task;
+package com.lawulu.bdc.etl.batch.task;
 
-import com.ciji.lawulu.etl.batch.test.AbstractApplicationContext;
+import com.lawulu.bdc.etl.batch.test.AbstractApplicationContext;
 import org.junit.Test;
 import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobParameter;

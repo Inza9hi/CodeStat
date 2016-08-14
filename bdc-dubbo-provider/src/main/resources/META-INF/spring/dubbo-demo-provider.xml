@@ -34,9 +34,9 @@
     <dubbo:service interface="com.lawulu.bdc.demo.etl.ReportSpiderService" ref="reportSpiderService"/>
 
 
-    <bean id="demoService" class="com.ciji.lawulu.demo.etl.impl.HelloServiceImpl"/>
+    <bean id="demoService" class="com.lawulu.bdc.demo.etl.impl.HelloServiceImpl"/>
 
-    <bean id="reportSpiderService" class="com.ciji.lawulu.demo.etl.impl.ReportSpiderServiceImpl"/>
+    <bean id="reportSpiderService" class="com.lawulu.bdc.demo.etl.impl.ReportSpiderServiceImpl"/>
 
 
 </beans>

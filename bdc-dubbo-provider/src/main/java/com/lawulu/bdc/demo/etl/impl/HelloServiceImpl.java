@@ -1,4 +1,4 @@
-package com.ciji.lawulu.demo.etl.impl;
+package com.lawulu.bdc.demo.etl.impl;
 
 import com.lawulu.bdc.demo.etl.HelloService;
 
